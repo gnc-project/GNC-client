@@ -7,7 +7,7 @@ import (
     "github.com/gnc-project/GNC-go/ethclient"
 )
 func main() {
-    client, err := ethclient.Dial("http://120.79.174.236:8545")
+    client, err := ethclient.Dial("http://localhost:8545")
     if err != nil {
         log.Fatal(err)
     }
