@@ -64,7 +64,7 @@ func Sign(hash []byte, prv *ecdsa.PrivateKey) ([]byte, error) {
 	if prv.Curve != btcec.S256() {
 		return nil, fmt.Errorf("private key curve is not secp256k1")
 	}
-	sig, err := btcec.SiRMCompact(btcec.S256(), (*btcec.PrivateKey)(prv), hash, false)
+	sig, err := btcec.SignCompact(btcec.S256(), (*btcec.PrivateKey)(prv), hash, false)
 	if err != nil {
 		return nil, err
 	}

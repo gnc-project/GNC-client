@@ -7,7 +7,7 @@ import (
 	"encoding/hex"
 	"github.com/gnc-project/GNC-go/common"
 	"github.com/gnc-project/GNC-go/core/types"
-	"github.com/gnc-project/GNC-go/ethclient"
+	"github.com/gnc-project/GNC-go/ethclient" 
 )
 func main() {
     client, err := ethclient.Dial("http://localhost:1234")
