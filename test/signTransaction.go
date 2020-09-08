@@ -16,14 +16,14 @@ import (
 )
 func main() {
     //Connect node
-    client, err := ethclient.Dial("http://localhost:8545")
+    client, err := ethclient.Dial("http://chain-node.galaxynetwork.vip")
     if err != nil {
         log.Fatal(err)
     }
 
 //Construct fromAddress by privatekey
-//0x0108aE381335Bba1F5a3293D501947D6174de367
-    privateKey, err := crypto.HexToECDSA("6ab0638768979e4a551a2c81b90c943cb12e07819bee721be74aaf481919bb2b")
+//GNC7d4ed9084A364424d1087d26C4Ef092EAfB0b395(have 100000000 GNC)
+    privateKey, err := crypto.HexToECDSA("a59bc058eb76eea5b64f1e55a803aa0968efda8a943f8f7eb835a6df9ac3a835")
     if err != nil {
         log.Fatal(err)
     }

@@ -14,7 +14,7 @@ import (
 )
 func main() {
 //Connect node
-    client, err := ethclient.Dial("http://localhost:1234")
+    client, err := ethclient.Dial("http://chain-node.galaxynetwork.vip")
     if err != nil {
         log.Fatal(err)
 	}
